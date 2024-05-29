@@ -3,10 +3,9 @@ const {Character} = require('./character');
 
 class Enemy extends Character {
   constructor(name, description, currentRoom) {
-    super(name, description, currentRoom) {
+    super(name, description, currentRoom);
       this.cooldown = 3000;
       this.attackTarget = null;
-    }
   }
 
   setPlayer(player) {

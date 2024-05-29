@@ -1,5 +1,4 @@
 class Room {
-
   constructor(name, description) {
     this.name = name;
     this.description = description;
@@ -52,15 +51,12 @@ class Room {
   }
 
   getItemByName(name) {
-
-    // Fill this in
-
+    return this.items.find(item => item.name === name);
   }
 
   getEnemyByName(name) {
-
-    // Fill this in
-
+    return this.getEnemies().find(enemy => enemy.name === name);
+  }
 }
 
 module.exports = {
